@@ -9,7 +9,7 @@ export default function ConversationList() {
       {conversations.map((conversation) => (
         <span
           key={conversation._id}
-          className="border-b-2 border-slate_custom cursor-pointer hover:bg-slate_custom transition-all ease-linear"
+          className="border-b border-slate_custom cursor-pointer hover:bg-slate_custom transition-all ease-linear"
         >
           <Conversation conversation={conversation} />
         </span>

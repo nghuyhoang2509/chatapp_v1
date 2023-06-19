@@ -8,7 +8,7 @@ export default {
         message_window: "#e2d8d4",
       },
       minWidth: {
-        16: "4rem",
+        10: "2.5rem",
       },
     },
   },

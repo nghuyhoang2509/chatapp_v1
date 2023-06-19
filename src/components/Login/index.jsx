@@ -20,9 +20,9 @@ export default function Login() {
   return (
     <div className="w-full h-full flex justify-center items-center">
       <div className="flex flex-col items-center">
-        <span className="text-6xl font-bold mb-16">Chat App</span>
+        <span className="text-4xl font-bold mb-16">Chat App</span>
         <button
-          className="bg-red-600 text-white font-normal text-4xl py-6 px-4 rounded-lg w-full mb-8 flex items-center"
+          className="bg-red-600 text-white font-normal text-2xl py-4 px-2 rounded-lg w-full mb-8 flex items-center"
           onClick={handleLoginWithGg}
         >
           <GoogleOutlined />

@@ -57,9 +57,9 @@ export default function ChatWindow() {
       <div className="w-full border-b-2 border-slate_custom flex flex-row items-center">
         <p
           onClick={() => setUserToChat("")}
-          className="hidden cursor-pointer ml-5 max-lg:flex"
+          className="hidden cursor-pointer ml-3 max-lg:flex"
         >
-          <ArrowLeftOutlined className="text-4xl" />
+          <ArrowLeftOutlined className="text-2xl" />
         </p>
         <UserCard
           displayName={userToChat?.displayName || ""}
@@ -81,20 +81,20 @@ export default function ChatWindow() {
           ))}
         </div>
       </div>
-      <div className="flex flex-row p-6">
+      <div className="flex flex-row p-4">
         <input
           disabled={!params?.id}
           type="text"
           value={sendMessage}
           onChange={(e) => setSendMessage(e.target.value)}
           placeholder="Type a message"
-          className="flex-1 h-14 px-4 bg-slate_custom rounded-lg outline-none focus:border-2"
+          className="flex-1 h-10 px-2 text-lg bg-slate_custom rounded-lg outline-none focus:border-2"
         />
         <span
           onClick={() => onSendMessage()}
           className="ml-8 flex items-center"
         >
-          <SendOutlined className="text-3xl text-gray-700 cursor-pointer" />
+          <SendOutlined className="text-1xl text-gray-700 cursor-pointer" />
         </span>
       </div>
     </div>

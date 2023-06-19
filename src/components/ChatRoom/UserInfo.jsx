@@ -29,28 +29,31 @@ export default function UserInfo() {
   };
   const navigate = useNavigate();
   return (
-    <div className="border-b-4 border-slate_custom flex flex-row items-center ">
+    <div className="border-b-2 border-slate_custom flex flex-row items-center ">
       {showAddConversation && (
-        <div className="absolute shadow-lg bg-opacity-50 bg-white top-0 bottom-0 left-0 right-0 flex justify-center items-center">
+        <div className="absolute border-b-2 bg-opacity-50 bg-white top-0 bottom-0 left-0 right-0 flex justify-center items-center">
           <div className="flex flex-col relative bg-white py-4 rounded-lg p-4">
-            <span className="mr-12 mb-6 text-3xl font-semibold text-black">
+            <span className="mr-10 mb-4 text-1xl font-semibold text-black">
               New Conversation
             </span>
-            <span className="text-gray-700 mb-1">
+            <span className="text-gray-700 mb-1 text-lg">
               Please enter an email address for the user you wish to chat with{" "}
             </span>
-            <label htmlFor="email" className="text-blue-600 font-medium">
+            <label
+              htmlFor="email"
+              className="text-blue-600 font-medium text-sm"
+            >
               Email address
             </label>
             <input
               id="email"
               value={emailAddConversation}
-              className="outline-none px-4 py-2 border-b-2 border-black focus:border-blue-600"
+              className="outline-none px-1 text-lg py-1 border-b border-black focus:border-blue-600"
               type="email"
               placeholder="Type a email"
               onChange={(e) => setEmailAddConversation(e.target.value)}
             />
-            <div className="mt-8 flex flex-row justify-end font-bold">
+            <div className="mt-6 flex flex-row justify-end font-bold text-sm">
               <button
                 onClick={() => {
                   setShowAddConversation(false);
@@ -84,11 +87,11 @@ export default function UserInfo() {
             signOut(auth);
             navigate("/login");
           }}
-          className="cursor-pointer whitespace-nowrap text-4xl mx-4 text-blue-600 flex items-center "
+          className="cursor-pointer whitespace-nowrap text-2xl mx-2 text-blue-600 flex items-center "
         >
           <LogoutOutlined />
         </span>
-        <span className="cursor-pointer whitespace-nowrap text-4xl mx-4 text-blue-600 flex items-center">
+        <span className="cursor-pointer whitespace-nowrap text-2xl mx-2 text-blue-600 flex items-center">
           <UserAddOutlined onClick={() => setShowAddConversation(true)} />
         </span>
       </div>
