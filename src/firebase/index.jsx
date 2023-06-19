@@ -9,7 +9,7 @@ import { getFirestore } from "firebase/firestore";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyAVQtcXB8u1POBbDL12BuPpDKktjFr3ng8",
-  authDomain: "chatapp-eb7c3.firebaseapp.com",
+  authDomain: "https://chatapp-v1.netlify.app",
   projectId: "chatapp-eb7c3",
   storageBucket: "chatapp-eb7c3.appspot.com",
   messagingSenderId: "1006306276906",
